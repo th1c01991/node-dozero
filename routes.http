@@ -1,0 +1,31 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+//Tipo de arquivo - metadados
+
+{
+    "title": "video 1",
+    "description": "Meu primeiro video",
+    "duration": 180
+
+}
+
+###
+
+GET  http://localhost:3333/videos?search=no
+
+###
+
+PUT  http://localhost:3333/videos/fadeb2fc-7a7d-4f4f-b3a9-e73530531708
+Content-Type: application/json
+//Tipo de arquivo - metadados
+
+{
+    "title": "video node",
+    "description": "Meu video",
+    "duration": 180
+
+}
+
+###
+DELETE   http://localhost:3333/videos/fadeb2fc-7a7d-4f4f-b3a9-e73530531708
+
